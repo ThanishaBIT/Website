@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- navbar starts -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+     <div class="container-fluid">
+    <a class="navbar-brand" href="#">BIT</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- navbar ends-->
+ <!-- breadcrum start -->
+  
+<div class="container-fluid">
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">About</li>
+  </ol>
+</nav>
+</div>
+<div class="container-fluid">
+    <h1 class="text-start">About our Intership Program</h1>
+    <p>This page demonstrates how Bootstrap componenets can be used to build structured and responsive layouts.</p>
+   <div class="row mb-3">
+      <div class="col-6">
+        <p class="fw-bold"> Frontend Focus</p>
+        <p> Interns learn Html ,Bootstrap,and UI components</p> 
+       </div>
+      <div class="col-6">
+        <p class="fw-bold">Hands-on learning</p>
+        <p> Practical approach with real UI layouts and components</p>
+      </div>
+      <p class="fw-bold fs-3">What will intern practice</p>
+      <div class="row container-fluid">
+        <div class="col-8">
+        <table class="table table-bordered">
+           
+             <tr>
+                <th class="bg-black text-white">Topic</th>
+                <th class="bg-black text-white">Status</th>
+             </tr>
+             <tr>
+                <td>Bootstrap Grid</td>
+                <td > <span class="badge bg-success">completed</span></td>
+             </tr>
+             <tr>
+                <td>components</td>
+               <td ><span class="badge bg-warning">completed</span></td>
+             </tr>
+             <tr>
+                <td>Responsive layout</td>
+                <td  > <span class="badge bg-info">upcoming</span></td>
+             </tr>
+
+            </table>
+
+       </div>
+       <div class="col-4">
+         <p>Learning progress</p>
+         <label for="range1" class="form-label">HTML</label>
+         <input type="range" class=" progress-bar bg-success"value ="82" id="range1">
+         <label for="range1" class="form-label">Bootstrap</label>
+         <input type="range" class="progress-bar bg-sucess" id="range1">
+          
+       </div>
+      </div>
+      
+   </div>
+</div>
+ <div >
+
+
+<div class="container-fluid">
+
+  <!-- Tabs -->
+  <ul class="nav nav-pills mb-3">
+    <li class="nav-item">
+      <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#mission">
+        Mission
+      </button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link" data-bs-toggle="pill" data-bs-target="#vision">
+        Vision
+      </button>
+    </li>
+  </ul>
+
+  <!-- Content -->
+  <div class="tab-content">
+    <div class="tab-pane fade show active" id="mission">
+      <p>Our mission is to train interns with practical frontend skills.</p>
+    </div>
+
+    <div class="tab-pane fade" id="vision">
+      <p>Our vision is to build skilled developers ready for the industry.</p>
+    </div>
+  </div>
+
+</div>
+<div class="container-fluid mb-3">
+  <h5>FA Questions</h5>
+  <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+       Do we write custom CSS?
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+     No.We use onlt Bootstarp utility classess. 
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+ </div> 
+ </div>
+<footer class="bg-dark text-white pt-4">
+    <div class="container-fluid mt-4">
+        <div class="row">
+           <div class="col-4 ">
+                <h5>Intern site </h5>
+                <p>Bootstrap learning platform</p>
+            </div>
+            <div class="col-4 text-center">
+                <h5>Pages</h5>
+                <ul class="list-unstyled">
+                    <li><a class="text-white text-decoration-none"href ="">Home</a></li>
+                    <li><a class="text-white text-decoration-none" href ="">About</a></li>
+                    <li><a class="text-white text-decoration-none"href ="" >Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-4 text-center">
+                
+                <p><span class="badge bg-success">Intern training </p>
+                
+            </div>
+            <hr/>
+            
+        </div>
+    </div>
+ </footer>
+    
+  
+</body>
+</html>
